@@ -51,7 +51,20 @@ class Splits():
             wc.pcbEditorWindow.SetSize(s_lsplit)
             wc.schematicEditorWindow.SetSize(s_rsplit)
 
+        elif (splitType == SplitsTypes.oneToOneToOne):
+            #windowsContext.getPcbEditorWindow.SetSize()
+            wc.pcbEditorWindow.SetSize(s_looo)
+            wc.schematicEditorWindow.SetSize(s_rooo)
 
+        elif (splitType == SplitsTypes.orga):
+            #windowsContext.getPcbEditorWindow.SetSize()
+            wc.pcbEditorWindow.SetSize(s_otl)
+            wc.schematicEditorWindow.SetSize(s_obl)
+
+        elif (splitType == SplitsTypes.twoToOne):
+            #windowsContext.getPcbEditorWindow.SetSize()
+            wc.pcbEditorWindow.SetSize(s_lsplit)
+            wc.schematicEditorWindow.SetSize(s_rsplit)
         
     def __del__( self ):
         pass

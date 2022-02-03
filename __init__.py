@@ -5,8 +5,8 @@ import wx
 import wx.aui
 import os
 import logging
-from . import workspaceDialog 
-from . import windowsContext
+from . import WorkspaceDialog 
+from . import WindowsContext
 
 class KiCadWorkspaceOrganizerPlugin(pcbnew.ActionPlugin):
     def defaults( self ):
@@ -31,14 +31,15 @@ class KiCadWorkspaceOrganizerPlugin(pcbnew.ActionPlugin):
         #pcb_file_name = board.GetFileName()
         #logging.debug(pcb_file_name)
 
-        wc = windowsContext.WindowsContext(wx.GetTopLevelWindows())
+        wc = WindowsContext.WindowsContext(wx.GetTopLevelWindows())
+        WindowsContext.Splits(WindowsContext.SplitsTypes.twoToOne)
         #windowsContext.Splits(windowsContext.SplitsTypes.split, wc)
         #wx.StaticText(panel, label =str(type(windows)), pos =(100, 100))
 
 
         #pcbwin = findPcbnewWindow()
         #top_tb = pcbwin.FindWindowById(6038)
-        frame2 = workspaceDialog.MyFrame1(None)
+        frame2 = WorkspaceDialog.WorkspaceDialog(None)
         #frame.Show()
         frame2.Show()
 

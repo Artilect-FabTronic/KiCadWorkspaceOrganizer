@@ -1,13 +1,13 @@
 import wx
-from workspaceDialog import MyFrame1
-from windowsContext import WindowsContext
+import WorkspaceDialog
+import WindowsContext
 
 Application1 = wx.App()
 
-frame2 = MyFrame1(None)
+frame2 = WorkspaceDialog.WorkspaceDialog(None)
 frame2.Show()
 
 windows = wx.GetTopLevelWindows()
-WindowsContext(windows)
+WindowsContext.WindowsContext(windows)
 
 Application1.MainLoop()
