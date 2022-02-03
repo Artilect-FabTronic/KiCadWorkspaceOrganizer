@@ -1,13 +1,13 @@
 import wx
-import MyFrame1
+from workspaceDialog import MyFrame1
+from windowsContext import WindowsContext
 
- # creaing application object with the Python object
 Application1 = wx.App()
- # creating a frame with the Python object
- ##TODO: find the parent
-frame = MyFrame1.MyFrame1(None)
 
-frame.Show()
+frame2 = MyFrame1(None)
+frame2.Show()
 
- # start the event loop to run the application
+windows = wx.GetTopLevelWindows()
+WindowsContext(windows)
+
 Application1.MainLoop()
