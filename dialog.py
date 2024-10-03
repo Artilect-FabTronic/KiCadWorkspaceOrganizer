@@ -1,6 +1,6 @@
 import wx
 import WorkspaceDialog
-import WindowsContext
+import WindowsContext as WindowsContext
 
 Application1 = wx.App()
 
