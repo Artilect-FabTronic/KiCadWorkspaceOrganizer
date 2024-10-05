@@ -19,9 +19,9 @@ def debug_loop():
 
 class KiCadWorkdpaceOrganizerAction(pcbnew.ActionPlugin):
     def defaults(self):
-        self.name = "A very complex action plugin"
-        self.category = "A descriptive category name"
-        self.description = "A description of the plugin"
+        self.name = "KiCad Workspace Organizer"
+        self.category = "Quality of life"
+        self.description = "Working on KiCad on one screen but easier"
         self.show_toolbar_button = True # Optional, defaults to False
         self.icon_file_name = os.path.join(os.path.dirname(__file__), 'img/icon.png') # Optional
 
